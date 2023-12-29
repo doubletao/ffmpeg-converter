@@ -111,6 +111,7 @@ void MainWindow::onConvertClicked() {
                 qDebug() << "command:" << command;
 
                 stream << command << "\n";
+                stream << "ping /n 60 127.0.0.1" << "\n";
             }
 
             batchFile.close();
